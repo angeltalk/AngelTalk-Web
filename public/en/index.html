@@ -1,5 +1,22 @@
 <html>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+    
+        
+   $(document).ready(function(){
+
+       var browserLocale = getLang();
+       console.log(browserLocale);
+   });
+        
+    function getLang(){
+         if (navigator.languages != undefined) 
+         return navigator.languages[0]; 
+         else 
+         return navigator.language;
+    }
+    </script>
     <body>
         <h2>English</h2>
     </body>

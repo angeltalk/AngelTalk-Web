@@ -8,7 +8,7 @@
 
        var browserLocale = getLang();
        console.log(browserLocale);
-       if("ko" == browserLocale.toLowerCase() || "kr" == browserLocale.toLowerCase()){
+       if(browserLocale.toLowerCase().includes("ko") || browserLocale.toLowerCase().includes("kr")) {
            location.href = "/kr/index.html";
        }else{
            location.href = "/en/index.html";
