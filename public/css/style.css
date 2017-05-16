@@ -1,0 +1,440 @@
+
+body, h1, h2, h3, h4, p, div, a, span, pre {
+    letter-spacing: 0.5px;
+    font-style: normal;
+    font-stretch: normal;
+    font-family: 'Open Sans Light', sans-serif !important;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 960px;
+    overflow-y: auto;
+    background: -webkit-linear-gradient(124deg, #e35f38, #b83bc0);
+    background: linear-gradient(124deg, #e35f38, #b83bc0);
+    color: white;
+}
+
+nav {
+    height:108px;
+}
+
+nav a.navbar-brand > img {
+    width: 128px;
+    height: 26px;
+    object-fit: contain;
+    margin-top: 17px;
+}
+
+nav #navbar > ul {
+    float: right;
+    margin-top: 18px;
+}
+
+nav #navbar ul li a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: left;
+    color: rgba(255,255,255,0.5)
+}
+
+nav #navbar ul li a .second-line{
+    font-size: 12px;
+    font-weight: normal;
+}
+
+header .header-content {
+    text-align: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+header .header-content .header-content-inner {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 100;
+    text-align: left;
+}
+
+header .header-content .header-content-inner h1 {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-size: 34px;
+    line-height: 1.24;
+}
+
+header#header-tutorial {
+    min-height: 580px;
+}
+
+
+header#header-tutorial .header-content .header-content-inner{
+    text-align: center;
+}
+
+header#header-tutorial .header-content .header-content-inner h1 {
+    margin-bottom: 0px;
+}
+
+header .header-content .header-content-inner h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+
+header .navbar-inverse {
+    background: none;
+    border: none;
+}
+
+header img.angeltalk-logo {
+    width: 333px;
+    height: 56px;
+    margin-top: 150px;
+    object-fit: contain;
+}
+
+header .badges {
+    text-align: left;
+}
+
+header .badges img {
+    width: 161px;
+    height: 48px;
+    margin-top: 40px;
+    object-fit: contain;
+}
+
+header .phone-screen img {
+    width: 270px;
+    height: 428px;
+    object-fit: contain;
+    padding: 55px 0 0 0;
+    margin-left: 0;
+}
+
+header img.angeltalk-angelee {
+    width: 134px;
+    height: 113px;
+    margin-top: 176px;
+    object-fit: contain;
+}
+
+header img.arrow-down {
+    width: 21px;
+    height: 13px;
+    object-fit: contain;
+    margin-top:139px;
+}
+
+header#header-tutorial img.arrow-down {
+    width: 21px;
+    height: 13px;
+    object-fit: contain;
+    margin-top:60px;
+}
+
+section.banners {
+    min-height: 100px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: solid 1px #eeeeee;
+}
+
+section a {
+    text-decoration: none!important;
+}
+
+section.banners div.row {
+    margin-top: 20px;
+}
+
+section img.banner-image {
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+}
+
+section.features {
+    text-align: center;
+    background-color: #ffffff;
+}
+
+section.features div.feature-item {
+    width: 400px;
+    height: 328px;
+    border-radius: 10px;
+    border: solid 1px #d5d5d5;
+}
+
+section.features div.feature-items {
+    width: 844px;
+    margin: 0 auto 82px auto;
+}
+
+section.features div.features-title > h1 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    margin: 54px 0;
+    color: #2c2c2c;
+}
+
+section.features div.row {
+    width: 844px;
+    margin: 20px 0;
+}
+
+section.features div.feature-item:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+section.features div.feature-item > img {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    object-fit: contain;
+}
+
+section.features div.feature-item > h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: #2c2c2c;
+}
+
+section.features div.feature-item > p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    text-align: center;
+    padding: 0 20px;
+}
+
+section.video {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.video iframe {
+    width : 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+section.tab-section div.tutorials{
+    max-width: 920px;
+    margin-top: 100px;
+}
+
+section.tab-section .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+    width: 230px;
+    text-align: center;
+}
+
+section.tab-section li.active > a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: #000000;
+    border: none;
+    border-bottom: 2px solid #000000;
+}
+
+section.tab-section li.active > a:hover {
+    border: none;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+}
+
+section.tab-section li.active > a:focus {
+    border: none;
+    border-bottom: 2px solid #000000;
+    background-color: transparent;
+}
+
+section.tab-section li > a {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    color: #a9a9a9;
+}
+
+section.tab-section li > a:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+section.tab-section li > a:focus {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+section.tab-section div.tab-pane {
+    margin-top: 60px;
+}
+
+section.tab-section div.tutorials div.video {
+    width: 800px;
+    height: 480px;
+    background-color: #d7d7d7;
+}
+
+section.tab-section div.tab-pane p {
+    width: 800px;
+    height: 22px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    margin-top: 54px;
+}
+
+section.tab-section div.tab-pane pre {
+    width: 800px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.71;
+    text-align: left;
+    color: #7f7f7f;
+    white-space: pre-line;
+    margin-top:40px;
+}
+
+section.tab-section div.tab-pane pre span{
+    font-weight: bold;
+}
+
+section.tab-section div.tab-pane pre span.italic{
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.71;
+}
+
+section.tab-section div.tab-pane pre.under  {
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: left;
+    white-space: pre-line;
+    margin-bottom: 100px;
+}
+
+footer {
+    background-color: #f9f9f9;
+}
+
+footer div.row {
+    max-width: 520px;
+}
+
+footer div.footer-title {
+    min-height: 325px;
+    overflow-y: auto;
+}
+
+footer div.footer-title > p {
+    margin-top: 71px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.29;
+    text-align: center;
+}
+
+footer div.feature-items {
+    margin-top: 54px;
+}
+
+footer div.feature-item p {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.29;
+    text-align: left;
+    float: left;
+    color: #2c2c2c;
+}
+
+footer div.feature-item > img {
+    margin-top : 3px;
+}
+
+footer img.location-icon {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+    float: left;
+}
+
+footer img.email-icon {
+    width: 19px;
+    height: 12px;
+    object-fit: contain;
+    float: right;
+}
+
+footer img.feedback-button {
+    width: 180px;
+    height: 38px;
+    margin-top: 54px;
+}
+
+footer div.float-left > div {
+    float: left;
+}
+
+footer div.float-right > div {
+    float: right;
+}
+
+footer div.footer-bottom {
+    width: 100%;
+    height: 100px;
+    background-color: #292929;
+    font-size: 22px;
+    line-height: 1.0;
+    text-align: left;
+    color: #a9a9a9;
+}
+
+footer div.footer-bottom .row {
+    margin-top: 33px;
+    max-width: 960px;
+}
+
+footer div.footer-bottom .row p {
+    margin-top: 6px;
+    margin-left: 40px;
+}
+
+footer div.footer-bottom ul {
+    font-size: 12px;
+    list-style: none;
+    float: right;
+    margin-right: 40px;
+    text-align: right;
+}
+
+footer div.footer-bottom ul > li:nth-child(2) {
+    margin-top: 7px;
+    text-decoration: underline;
+}
+
+footer div.footer-bottom ul a {
+    color: #a9a9a9;
+    text-decoration: none;
+}
+
+
+
