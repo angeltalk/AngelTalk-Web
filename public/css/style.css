@@ -9,7 +9,6 @@ body, h1, h2, h3, h4, p, div, a, span, pre {
 header {
     position: relative;
     width: 100%;
-    min-height: 960px;
     overflow-y: auto;
     background: -webkit-linear-gradient(124deg, #e35f38, #b83bc0);
     background: linear-gradient(124deg, #e35f38, #b83bc0);
@@ -40,9 +39,35 @@ nav #navbar ul li a {
     color: rgba(255,255,255,0.5)
 }
 
+nav #navbar ul li a:hover {
+    color: rgba(255,255,255,1)
+}
+
+
+nav #navbar ul li a.active {
+    color: rgba(255,255,255,1)
+}
+
+
 nav #navbar ul li a .second-line{
     font-size: 12px;
     font-weight: normal;
+}
+
+nav #ul_nav > li.dropdown.open > a {
+    padding-bottom: 5px;
+}
+
+nav #ul_nav > li.dropdown.open > ul {
+    margin-left: 18px;
+}
+
+nav #ul_nav > li.dropdown.open > ul a {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 2.0;
+    letter-spacing: normal;
+    text-align: left;
 }
 
 header .header-content {
@@ -71,7 +96,6 @@ header#header-tutorial {
     min-height: 580px;
 }
 
-
 header#header-tutorial .header-content .header-content-inner{
     text-align: center;
 }
@@ -80,12 +104,38 @@ header#header-tutorial .header-content .header-content-inner h1 {
     margin-bottom: 0px;
 }
 
+header img.arrow-down {
+    width: 21px;
+    height: 13px;
+    object-fit: contain;
+    margin-top:60px;
+    margin-bottom:54px;
+}
+
+header#header-usecase {
+    min-height: 556px;
+}
+
+header#header-usecase .header-content .header-content-inner{
+    text-align: center;
+}
+
+header#header-usecase .header-content .header-content-inner h1 {
+    margin-bottom: 0px;
+}
+
+header#header-usecase img.arrow-down {
+    width: 21px;
+    height: 13px;
+    object-fit: contain;
+    margin-top:60px;
+}
+
 header .header-content .header-content-inner h3 {
     font-size: 16px;
     line-height: 1.5;
     font-weight: 100;
 }
-
 
 header .navbar-inverse {
     background: none;
@@ -95,7 +145,7 @@ header .navbar-inverse {
 header img.angeltalk-logo {
     width: 333px;
     height: 56px;
-    margin-top: 150px;
+    margin-top: 114px;
     object-fit: contain;
 }
 
@@ -121,7 +171,7 @@ header .phone-screen img {
 header img.angeltalk-angelee {
     width: 134px;
     height: 113px;
-    margin-top: 176px;
+    margin-top: 68px;
     object-fit: contain;
 }
 
@@ -132,12 +182,6 @@ header img.arrow-down {
     margin-top:139px;
 }
 
-header#header-tutorial img.arrow-down {
-    width: 21px;
-    height: 13px;
-    object-fit: contain;
-    margin-top:60px;
-}
 
 section.banners {
     min-height: 100px;
@@ -220,6 +264,11 @@ section.features div.feature-item > p {
 
 section.video {
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.video div.row {
+    max-width: 960px;
+    height: 540px;
 }
 
 section.video iframe {
@@ -331,12 +380,129 @@ section.tab-section div.tab-pane pre.under  {
     margin-bottom: 100px;
 }
 
+section.introduce {
+    height:446px;
+}
+
+section.introduce img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-top:100px;
+}
+
+section.introduce pre {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2c2c2c;
+    margin-top:30px;
+    white-space: pre-line;
+}
+
+section.introduce pre span {
+    font-weight: normal;
+}
+
+section.momsdiary p {
+    width: 201px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: left;
+    margin-top: 54px;
+    margin-bottom: 54px;
+}
+
+section.momsdiary div.row {
+    max-width: 740px;
+    min-width: 390px;
+}
+
+section.momsdiary img.line {
+    width: 20px;
+    height: 1676px;
+    object-fit: contain;
+}
+
+section.momsdiary div.diary{
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: solid 1px #d5d5d5;
+    padding: 40px;
+}
+
+section.momsdiary div.diary:nth-child(1) {
+    height: 217.9px;
+    margin-bottom: 54px;
+}
+
+section.momsdiary div.diary:nth-child(2) {
+    height: 193.9px;
+    margin-bottom: 40px;
+}
+
+section.momsdiary div.diary:nth-child(3) {
+    height: 313.8px;
+    margin-bottom: 40px;
+}
+
+section.momsdiary div.diary:nth-child(4) {
+    height: 385.8px;
+    margin-bottom: 44px;
+}
+
+section.momsdiary div.diary:nth-child(5) {
+    height: 385.8px;
+    margin-bottom: 54px;
+}
+
+section.momsdiary div.diary pre {
+    font-size: 14px;
+    font-weight: lighter;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2c2c2c;
+    white-space: pre-line;
+    margin: 0px;
+}
+
+section.momsdiary div.diary:nth-child(1) pre {
+    height: 142px;
+}
+
+section.momsdiary div.diary:nth-child(2) pre {
+    height: 120px;
+}
+
+section.momsdiary div.diary:nth-child(3) pre {
+    height: 233.8px;
+}
+
+section.momsdiary div.diary:nth-child(4) pre {
+    height: 305.8px;
+    line-height:normal;
+}
+
+section.momsdiary div.diary:nth-child(5) pre {
+    height: 305.8px;
+}
+
+section.momsdiary div.diary pre span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 footer {
     background-color: #f9f9f9;
 }
 
 footer div.row {
-    max-width: 520px;
+    max-width: 540px;
 }
 
 footer div.footer-title {

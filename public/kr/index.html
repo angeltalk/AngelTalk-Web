@@ -15,9 +15,7 @@
     <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Plugin CSS -->
@@ -33,296 +31,108 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="../lib/jquery/jquery.min.js"></script>
 
+    <script>
+
+
+        $(document).ready(function(){
+
+            $("#header_body").load("header/home.html");
+            $("#contents_body").load("body/home.html");
+
+            $('.navbar-brand').click(function(){
+                inActiveAllMenu();
+                $('#menu_home').addClass("active");
+                $("#header_body").load("header/home.html");
+                $("#contents_body").load("body/home.html");
+            });
+            $('#menu_home').click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/home.html");
+                $("#contents_body").load("body/home.html");
+            });
+            $("#menu_how_to_use").click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/how_to_use.html");
+                $("#contents_body").load("body/how_to_use.html");
+            });
+            $("#menu_use_case").click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/use_case.html");
+                $("#contents_body").load("body/use_case.html");
+            });
+        });
+
+        function inActiveAllMenu(){
+            $("#ul_nav a").each(function(){$(this).removeClass("active")})
+        }
+
+    </script>
 </head>
 
 <body id="page-top">
 
-<nav class="navbar navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                    aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><img src="../img/img-textlogo.png"/></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#">Home<br/><span class="second-line">Welcome</span></a></li>
-                <li><a href="#tab-section">HOW TO USE<br/><span class="second-line">Tutorials</span></a></li>
-                <li><a href="#contact">HOW OTHERS USE<br/><span class="second-line">Use Cases</span></a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">LANGUAGES<span class="caret"></span><br/><span
-                            class="second-line">English </span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">ENGLISH</a></li>
-                        <li><a href="#">한국어</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<header id="header-main">
-    <div class="container">
-        <div>
-            <img class="angeltalk-logo center-block" src="../img/img-logo-main.png"/>
-        </div>
-        <div class="row">
-            <div class="col-sm-7">
-                <div class="header-content">
-                    <div class="header-content-inner">
-                        <h1>Application for children  with Angelman Syndrome</h1>
-                        <h3>AngelTalk is built to help the children who have special needs communicate with their
-                            parents and caregivers pleasantly and quickly.</h3>
-                        <h3>It is a mobile app suitable for those who just decided to start using Augmentative and
-                            Alternative Communication Tools.</h3>
-                        <div class="badges">
-                            <a class="badge-link" href="#"><img src="../img/btn-download.png" alt=""></a>
-                        </div>
+    <header id="header-main">
+        <div class="container">
+            <nav class="navbar" id="nav_top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="../img/img-textlogo.png"/></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav" id="ul_nav">
+                            <li><a class="active" id="menu_home" href="#">Home<br/><span class="second-line">Welcome</span></a></li>
+                            <li><a id="menu_how_to_use" href="#">HOW TO USE<br/><span class="second-line">Tutorials</span></a></li>
+                            <li><a id="menu_use_case" href="#">HOW OTHERS USE<br/><span class="second-line">Use Cases</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">LANGUAGES<span class="caret"></span><br/><span
+                                        class="second-line">한국어</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../en">ENGLISH</a></li>
+                                    <li><a href="../kr">한국어</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-5">
-                <div class="phone-screen">
-                    <img src="../img/img-phone.png" class="img-responsive center-block" alt="">
-                </div>
-            </div>
-        </div>
-        <img class="arrow-down center-block" src="../img/ico-arrowdown-lg.png"/>
-    </div>
-</header>
-
-
-<section id="banners" class="banners">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <a href="https://www.kord.or.kr:55308/index.php" target="_blank"><img class="banner-image center-block"
-                                                                                      src="../img/img-logo-1.png"/></a>
-            </div>
-            <div class="col-sm-3">
-                <a href="http://cafe.daum.net/angelmansyndrome" target="_blank"><img class="banner-image center-block"
-                                                                                     src="../img/img-logo-2.png"/></a>
-            </div>
-            <div class="col-sm-3">
-                <a href="http://ijun.or.kr/" target="_blank"><img class="banner-image center-block"
-                                                                  src="../img/img-logo-3.png"/></a>
-            </div>
-            <div class="col-sm-3">
-                <a href="http://www.hanspeak.com/" target="_blank"><img class="banner-image center-block"
-                                                                        src="../img/img-logo-4.png"/></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="features" class="features">
-    <div class="container">
-        <div class="features-title">
-            <h1>KEY FEATURES</h1>
-        </div>
-        <div class="feature-items">
-            <div class="row center-block">
-                <div class="col-sm-6">
-                    <a href="">
-                        <div class="feature-item">
-                            <img src="../img/ico-media.png"/>
-                            <h3>CARDS WITH REAL IMAGE & VOICE</h3>
-                            <p class="text-muted">Use real pictures or short video clips of the things that your
-                                child want to express. Record your voice to gain your child’s attention.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="">
-                        <div class="feature-item">
-                            <img src="../img/ico-locked.png"/>
-                            <h3>CARDS ON LOCK SCREEN</h3>
-                            <p class="text-muted">Worrying about abuse of smartphone by your child? Using the lock
-                                screen of your smartphone, You can hand it to your child, anytime you want.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row center-block">
-                <div class="col-sm-6">
-                    <a href="">
-                        <div class="feature-item">
-                            <img src="../img/ico-cards.png"/>
-                            <h3>MANAGE CARDS EASILY</h3>
-                            <p class="text-muted">Wanna hide some cards that are not appropriate at this moment, or
-                                change some cards? It takes only a few seconds to do all things above.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-6">
-                    <a href="">
-                        <div class="feature-item">
-                            <img src="../img/ico-share.png"/>
-                            <h3>SHARE CARDS INSTANTLY</h3>
-                            <p class="text-muted">Share cards to family members, school teachers, and language
-                                pathologists. You can share instantly via text messages or KakaoTalk.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="video" class="video">
-    <div class="container">
-        <div class="row">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://www.youtube.com/embed/ZjRpfmXDm1k" frameborder="0" allowfullscreen></iframe>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-<header id="header-tutorial">
-    <div class="container">
-        <div>
-            <img class="angeltalk-angelee center-block" src="../img/img-angelee.png"/>
-        </div>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1>HOW TO USE ANGELTALK</h1>
-                <h3>It is simple, easy and pleasant to use. If you follow the instructions below, You won’t wonder around the screens.</h3>
-            </div>
-        </div>
-        <img class="arrow-down center-block" src="../img/ico-arrowdown-lg.png"/>
-    </div>
-</header>
-
-<section id="tab-section" class="tab-section">
-    <div class="container">
-        <!-- Nav tabs -->
-        <div class="tutorials center-block">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#make-a-card" aria-controls="make-a-card" role="tab"
-                                                          data-toggle="tab">MAKE A CARD</a></li>
-                <li role="presentation"><a href="#using-lockscreen" aria-controls="using-lockscreen" role="tab" data-toggle="tab">USING LOCKSCREEN</a>
-                </li>
-                <li role="presentation"><a href="#manage-cards" aria-controls="manage-cards" role="tab"
-                                           data-toggle="tab">MANAGE CARDS</a></li>
-                <li role="presentation"><a href="#share-cards" aria-controls="share-cards" role="tab"
-                                           data-toggle="tab">SHARE CARDS</a></li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-
-                <div role="tabpanel" class="tab-pane active" id="make-a-card">
-                    <div class="video center-block embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9gHX7CNjeVc" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="center-block">Make your own card with Real Image and Voice</p>
-                    <pre class="main center-block">
-                        Use real pictures or short video clips of the things that your child want to express, and record your own voice to gain your child’s attention.
-
-
-                        i. Prepare something you want to take a picture of it.
-
-                        ii. Before running the app,  choose the name of the card carefully and practice to pronounce it correctly, so that your child can easily recognize your voice and its meaning clearly.
-
-                        iii. Run the app on your smartphone and choose one of the existing categories where your card will be placed.
-
-                        iv. Tap the ‘New Card’ button,  and follow the instructions.
-                    </pre>
-                    <pre class="under center-block">
-                        * In some circumstances, you might not have enough time to make the card completely. 
-                        Don’t worry about it. In which case just capture the picture of what you want by using your camera app. 
-                        Later, you can make the card with that picture.
-                    </pre>
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="using-lockscreen">
-                    <div class="video center-block embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nh2tqwlmiCE" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="center-block">Show Cards on Lock Screen of your smartphone</p>
-                    <pre class="main center-block">
-                        Worrying about abuse of smartphone by your child?
-                        Our app uses the lock screen of your smartphone. You can hand it to your child, anytime you want.
-
-
-                        i. Pull down the notification drawer of your smartphone.
-
-                        ii. Find the AngelTalk among a bunch of bars, and press the ‘ON’ button in the AngelTalk bar.
-
-                        iii. Now, AngelTalk app will appear on the lock screen. You can hand your smartphone to your child.
-                    </pre>
-                    <pre class="under center-block">
-                        * If you are not with your child, then press the ‘OFF’ button in the notification bar, it won’t appear on the lock screen.
-                    </pre>
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="manage-cards">
-                    <div class="video center-block embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KvusKDHgGSc" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="center-block">Manage Cards Easily</p>
-                    <pre class="main center-block">
-                        <span>SHOW/HIDE </span>
-                        At a particular time, you may think that some cards are not appropriate to show them to your child.
-                         Instead of deleting those cards permanently, you can just hide them so that your child are not able to see them in AngelTalk.<br /><br />
-                        <span>CHANGE SORT ORDER </span>
-                        As your child grows, his or her interest changes. You can place the most attractive card in upper position and lower the position of less intersting cards. Your child doesn’t need to swipe too many cards to find a proper one.<br /><br />
-                        <span>CHANGE CARD NAME, VOICE, etc.</span>
-                        It’s easy and simple. It takes only a few second to change those.
-                    </pre>
-                    <pre class="under center-block"></pre>
-                </div>
-
-                <div role="tabpanel" class="tab-pane" id="share-cards">
-                    <div class="video center-block embed-responsive embed-responsive-16by9">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KvusKDHgGSc" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <p class="center-block">Share the Cards you made instantly with others </p>
-                    <pre class="main center-block">
-                        <span>#01 </span>
-                        As a mom, you’ve made some cards. Your child likes those cards.  What about your husband?<br/>
-                        <span>#02 </span>
-                        Your child’s language pathologist said that she taught a new word to your child today, and he seemed to wanna talk about it. So, you made a card with the picture of similar things that appeared to represent the new word.However, your child doesn’t think your card was identical to the one at the language center.
-                         What should you do?<br/>
-                        <span class="italic">Send your cards to them and get their cards into your app. That will resolve these problems!</span>
-                    </pre>
-                    <pre class="under center-block"></pre>
-                </div>
+            </nav>
+            <div id="header_body" class="container">
 
             </div>
         </div>
-    </div>
-</section>
+    </header>
+
+<div id="contents_body">
+
+</div>
 
 <footer>
     <div class="container footer-title">
-        <p>Any suggestions, questions, bug reports, and other inquiries, would be welcomed!</p>
+        <p>앱 개선 의견이나 문의 사항이 있으면 언제든지 저희에게 의견 보내주세요. 사용 중 불편하신 점, 앱 오류, 아이디어 어떤 것도 좋습니다.</p>
         <div class="feature-items">
             <div class="row center-block">
                 <div class="col-sm-6">
-                    <a href="">
-                        <div class="feature-item float-left">
-                            <img src="../img/ico-location.png" class="location-icon"/>
-                            <div>
-                                <p>125 Olympic-ro 35-gil <br/> Songpa-gu, Seoul 05510, Korea</p>
-                            </div>
-
+                    <div class="feature-item">
+                        <img src="../img/ico-location.png" class="location-icon"/>
+                        <div>
+                            <p>125 Olympic-ro 35-gil <br/> Songpa-gu, Seoul 05510, Korea</p>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="col-sm-6">
-                    <a href="">
+                    <a href="mailto:act.angeltalk@gmail.com">
                         <div class="feature-item float-right">
                             <div>
                                 <p>act.angeltalk@gmail.com</p>
@@ -332,7 +142,10 @@
                     </a>
                 </div>
             </div>
-            <img class="feedback-button center-block" src="../img/btn-feedback.png"/>
+            <a href="https://docs.google.com/forms/d/1jaWhUQse_1RmqOCG2vQ_oW3QNCGv4AYowrhS6BOqNnU/edit" target="_blank">
+                <img class="feedback-button center-block" src="../img/btn-feedback.png"/>
+            </a>
+
         </div>
     </div>
     <div class="container footer-bottom">
@@ -343,15 +156,15 @@
             <div class="col-sm-6">
                 <ul class="list">
                     <li>Copyrights © 2017 All Rights Reserved</li>
-                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="https://docs.google.com/document/d/1ntRaoVOOvFlEIRH3bLiqe--jcJ2CJEwKbP0-pPQZAZs/edit?usp=sharing" target="_blank">Privacy Policy</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
 
+
 <!-- jQuery -->
-<script src="../lib/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="../lib/bootstrap/js/bootstrap.min.js"></script>

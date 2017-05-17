@@ -4254,6 +4254,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   top: 0;
   border-width: 0 0 1px;
 }
+.navbar-fixed-top-inactive {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0;
@@ -4316,8 +4320,20 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-bottom: 10px;
   line-height: 20px;
 }
+
+.navbar-nav > li > a {
+  background-color: transparent;
+}
+
+.navbar-nav > li > a:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+
+
 @media (max-width: 767px) {
-  .navbar-nav .open .dropdown-menu {
+.navbar-nav .open .dropdown-menu {
     position: static;
     float: none;
     width: auto;
@@ -4343,6 +4359,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-nav {
     float: left;
     margin: 0;
+
   }
   .navbar-nav > li {
     float: left;
@@ -4351,6 +4368,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+  .navbar-nav > li > a:focus{
+    background-color: transparent;
+  }
+
+
 }
 .navbar-form {
   padding: 10px 15px;
@@ -4437,6 +4459,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 0;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  background-color: rgba(0,0,0,0.5);
 }
 .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
   margin-bottom: 0;
@@ -4445,6 +4468,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
+
+#navbar > ul > li.dropdown.open > a:focus{
+  background-color: transparent;
+}
+
+#navbar > ul > li.dropdown.open > a > li:hover,
+#navbar > ul > li.dropdown.open > ul > li > a{
+  background-color: transparent;
+}
+#navbar > ul > li.open a{
+  background-color: transparent;
+}
+
 .navbar-btn {
   margin-top: 8px;
   margin-bottom: 8px;

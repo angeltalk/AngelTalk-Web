@@ -1,23 +1,182 @@
+<!DOCTYPE html>
 <html>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script>
-    
-        
-   $(document).ready(function(){
+<head>
 
-       var browserLocale = getLang();
-       console.log(browserLocale);
-   });
-        
-    function getLang(){
-         if (navigator.languages != undefined) 
-         return navigator.languages[0]; 
-         else 
-         return navigator.language;
-    }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>New Age - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css">
+
+    <!-- Theme CSS -->
+    <!--<link href="../css/new-age.css" rel="stylesheet">-->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../lib/jquery/jquery.min.js"></script>
+
+    <script>
+
+
+        $(document).ready(function(){
+
+            $("#header_body").load("header/home.html");
+            $("#contents_body").load("body/home.html");
+
+            $('.navbar-brand').click(function(){
+                inActiveAllMenu();
+                $('#menu_home').addClass("active");
+                $("#header_body").load("header/home.html");
+                $("#contents_body").load("body/home.html");
+            });
+            $('#menu_home').click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/home.html");
+                $("#contents_body").load("body/home.html");
+            });
+            $("#menu_how_to_use").click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/how_to_use.html");
+                $("#contents_body").load("body/how_to_use.html");
+            });
+            $("#menu_use_case").click(function(){
+                inActiveAllMenu();
+                $(this).addClass("active");
+                $("#header_body").load("header/use_case.html");
+                $("#contents_body").load("body/use_case.html");
+            });
+        });
+
+        function inActiveAllMenu(){
+            $("#ul_nav a").each(function(){$(this).removeClass("active")})
+        }
+
     </script>
-    <body>
-        <h2>English</h2>
-    </body>
+</head>
+
+<body id="page-top">
+
+    <header id="header-main">
+        <div class="container">
+            <nav class="navbar" id="nav_top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                                aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img src="../img/img-textlogo.png"/></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav" id="ul_nav">
+                            <li><a class="active" id="menu_home" href="#">Home<br/><span class="second-line">Welcome</span></a></li>
+                            <li><a id="menu_how_to_use" href="#">HOW TO USE<br/><span class="second-line">Tutorials</span></a></li>
+                            <li><a id="menu_use_case" href="#">HOW OTHERS USE<br/><span class="second-line">Use Cases</span></a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                   aria-expanded="false">LANGUAGES<span class="caret"></span><br/><span
+                                        class="second-line">English </span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="../en">ENGLISH</a></li>
+                                    <li><a href="../kr">한국어</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="header_body" class="container">
+
+            </div>
+        </div>
+    </header>
+
+<div id="contents_body">
+
+</div>
+
+<footer>
+    <div class="container footer-title">
+        <p>Any suggestions, questions, bug reports, and other inquiries, would be welcomed!</p>
+        <div class="feature-items">
+            <div class="row center-block">
+                <div class="col-sm-6">
+                    <div class="feature-item">
+                        <img src="../img/ico-location.png" class="location-icon"/>
+                        <div>
+                            <p>125 Olympic-ro 35-gil <br/> Songpa-gu, Seoul 05510, Korea</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <a href="mailto:act.angeltalk@gmail.com">
+                        <div class="feature-item float-right">
+                            <div>
+                                <p>act.angeltalk@gmail.com</p>
+                            </div>
+                            <img src="../img/ico-email.png" class="email-icon"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <a href="https://docs.google.com/forms/d/1jaWhUQse_1RmqOCG2vQ_oW3QNCGv4AYowrhS6BOqNnU/edit" target="_blank">
+                <img class="feedback-button center-block" src="../img/btn-feedback.png"/>
+            </a>
+
+        </div>
+    </div>
+    <div class="container footer-bottom">
+        <div class="row center-block">
+            <div class="col-sm-6">
+                <p>ANGELTALK DEVS</p>
+            </div>
+            <div class="col-sm-6">
+                <ul class="list">
+                    <li>Copyrights © 2017 All Rights Reserved</li>
+                    <li><a href="https://docs.google.com/document/d/1ntRaoVOOvFlEIRH3bLiqe--jcJ2CJEwKbP0-pPQZAZs/edit?usp=sharing" target="_blank">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="../js/new-age.min.js"></script>
+
+</body>
+
 </html>
