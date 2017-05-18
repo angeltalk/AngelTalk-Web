@@ -4,11 +4,14 @@
     $(document).ready(function() {
 
         $("#img_arrow").click(function () {
-            window.scrollTo(0, 556);
+            window.scrollTo(0, $("#introduce").offset().top - 87);
         });
+
+        $(window).unbind();
         $(window).scroll(function(){
+
             var topOffset = $(this).scrollTop();
-            if(topOffset > 555){
+            if(topOffset > $("#introduce").offset().top - 88){
                 $('#header-main').css("margin-top","108px")
                 $("#nav_top").addClass("navbar-fixed-top");
                 $("#nav_top").addClass("navbar-fixed-top-inactive");
@@ -24,10 +27,12 @@
 <div>
     <img class="angeltalk-angelee center-block" src="../../img/img-angelee.png"/>
 </div>
-<div class="header-content">
+<div id="header-usage" class="header-content">
     <div class="header-content-inner">
         <h1>SEE HOW OTHERS USE THIS APP</h1>
         <h3>Here is Jungmin’s Pleasant Life</h3>
     </div>
 </div>
-<img id="img_arrow" class="arrow-down center-block" src="../../img/ico-arrowdown-lg.png"/>
+<button class="center-block">
+    <img id="img_arrow" class="arrow-down arrow-no-margin center-block" src="../../img/ico-arrowdown-lg.png"/>
+</button>

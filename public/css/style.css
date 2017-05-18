@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-    height:108px;
+    height:88px;
 }
 
 nav a.navbar-brand > img {
@@ -29,6 +29,11 @@ nav a.navbar-brand > img {
 nav #navbar > ul {
     float: right;
     margin-top: 18px;
+    margin-right: 80px;
+}
+
+nav #navbar ul li {
+    margin-right: 15px;
 }
 
 nav #navbar ul li a {
@@ -37,6 +42,10 @@ nav #navbar ul li a {
     line-height: 1.4;
     text-align: left;
     color: rgba(255,255,255,0.5)
+}
+
+.navbar-fixed-top-inactive #navbar ul {
+    margin-top: 10px;
 }
 
 nav #navbar ul li a:hover {
@@ -74,6 +83,7 @@ header .header-content {
     text-align: center;
     margin-top: 60px;
     position: relative;
+    min-width: 500px;
 }
 
 header .header-content .header-content-inner {
@@ -86,30 +96,33 @@ header .header-content .header-content-inner {
 
 header .header-content .header-content-inner h1 {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     font-weight: 100;
     font-size: 34px;
     line-height: 1.24;
 }
 
-header#header-tutorial {
-    min-height: 580px;
-}
-
-header#header-tutorial .header-content .header-content-inner{
+div#header-tutorial .header-content-inner, div#header-usage .header-content-inner {
     text-align: center;
 }
 
-header#header-tutorial .header-content .header-content-inner h1 {
+div#header-tutorial .header-content-inner h1, div#header-usage .header-content-inner h1 {
     margin-bottom: 0px;
 }
 
-header img.arrow-down {
+header button img.arrow-down {
     width: 21px;
     height: 13px;
     object-fit: contain;
     margin-top:60px;
     margin-bottom:54px;
+    cursor: pointer;
+}
+header button , header button:focus{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: default;
 }
 
 header#header-usecase {
@@ -124,7 +137,7 @@ header#header-usecase .header-content .header-content-inner h1 {
     margin-bottom: 0px;
 }
 
-header#header-usecase img.arrow-down {
+header#header-usecase button img.arrow-down {
     width: 21px;
     height: 13px;
     object-fit: contain;
@@ -145,7 +158,7 @@ header .navbar-inverse {
 header img.angeltalk-logo {
     width: 333px;
     height: 56px;
-    margin-top: 114px;
+    margin-top: 84px;
     object-fit: contain;
 }
 
@@ -171,15 +184,19 @@ header .phone-screen img {
 header img.angeltalk-angelee {
     width: 134px;
     height: 113px;
-    margin-top: 68px;
+    margin-top: 38px;
     object-fit: contain;
 }
 
-header img.arrow-down {
+header button img.arrow-down {
     width: 21px;
     height: 13px;
     object-fit: contain;
     margin-top:139px;
+}
+
+header button img.arrow-down.arrow-no-margin {
+    margin-top:60px;
 }
 
 
@@ -196,6 +213,7 @@ section a {
 
 section.banners div.row {
     margin-top: 20px;
+    max-width: 1000px;
 }
 
 section img.banner-image {
@@ -266,16 +284,12 @@ section.video {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-section.video div.row {
-    max-width: 960px;
-    height: 540px;
-}
-
-section.video iframe {
-    width : 100%;
+section.video iframe{
+    width: 100%;
     height: 100%;
-    margin: 0 auto;
-    object-fit: contain;
+    top:0;
+    bottom:0;
+    left: 0;
 }
 
 section.tab-section div.tutorials{
@@ -334,7 +348,8 @@ section.tab-section div.tab-pane {
     margin-top: 60px;
 }
 
-section.tab-section div.tutorials div.video {
+section.tab-section div.tutorials div.video,
+section.video div.video {
     width: 800px;
     height: 480px;
     background-color: #d7d7d7;
@@ -490,6 +505,7 @@ section.momsdiary div.diary:nth-child(4) pre {
 
 section.momsdiary div.diary:nth-child(5) pre {
     height: 305.8px;
+    line-height: 1.6;
 }
 
 section.momsdiary div.diary pre span {
