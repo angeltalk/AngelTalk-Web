@@ -17,6 +17,7 @@ header {
 
 nav {
     height:88px;
+    z-index: 1000;
 }
 
 nav a.navbar-brand > img {
@@ -83,7 +84,7 @@ header .header-content {
     text-align: center;
     margin-top: 60px;
     position: relative;
-    min-width: 300px;
+    min-width: 270px;
 }
 
 header .header-content .header-content-inner {
@@ -620,9 +621,9 @@ footer div.footer-bottom ul a {
         margin-bottom: 30px;
     }
 
-    /*[class*="col-"] {*/
-        /*width: 100%;*/
-    /*}*/
+    .col-width-100 {
+        width: 100%;
+    }
 
     .no-side-margin {
         margin-left: 0px;
@@ -639,7 +640,7 @@ footer div.footer-bottom ul a {
     }
 
     section.video iframe{
-        width: 320px;
+        width: 290px;
         height: 300px;
         top:0;
         bottom:0;
@@ -648,7 +649,7 @@ footer div.footer-bottom ul a {
 
     section.tab-section div.tutorials div.video,
     section.video div.video {
-        width: 320px;
+        width: 290px;
         height: 300px;
         background-color: #d7d7d7;
     }
@@ -658,7 +659,7 @@ footer div.footer-bottom ul a {
     }
 
     #navbar {
-        height: 300px;
+        height: 312px;
     }
 
     nav #navbar > ul {
@@ -698,4 +699,36 @@ footer div.footer-bottom ul a {
         padding: 28px;
     }
 
+    .nav-tabs-area {
+        min-width : 290px;
+        overflow-x: scroll;
+    }
+
+    ul.nav.nav-tabs {
+      width: 760px;
+    }
+
+    ul.nav.nav-tabs > li {
+        width: 190px
+    }
+
+    section.tab-section li > a, section.tab-section li.active > a {
+        letter-spacing: normal;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    li.mobile-language-list {
+        display: block!important;
+    }
+
+    li.mobile-language-list > a {
+        padding-top: 6px;
+        padding-left: 30px;
+        font-weight: normal!important;
+    }
+}
+
+.mobile-language-list {
+    display: none!important;
 }
