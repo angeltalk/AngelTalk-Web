@@ -67,6 +67,9 @@
                 $("#header_body").load("header/use_case.html");
                 $("#contents_body").load("body/use_case.html");
             });
+            $("#language_dropdown").click(function(e){
+                $("#language_dropdown_menu").toggleClass('open');
+            })
         });
 
         function inActiveAllMenu(){
@@ -98,10 +101,10 @@
                             <li><a id="menu_how_to_use" href="#">HOW TO USE<br/><span class="second-line">Tutorials</span></a></li>
                             <li><a id="menu_use_case" href="#">HOW OTHERS USE<br/><span class="second-line">Use Cases</span></a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                <a id="language_dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                                    aria-expanded="false">LANGUAGES<span class="caret"></span><br/><span
                                         class="second-line">English </span></a>
-                                <ul class="dropdown-menu">
+                                <ul id="language_dropdown_menu" class="dropdown-menu">
                                     <li><a href="../en">ENGLISH</a></li>
                                     <li><a href="../kr">한국어</a></li>
                                 </ul>
@@ -125,21 +128,29 @@
         <p>Any suggestions, questions, bug reports, and other inquiries, would be welcomed!</p>
         <div class="feature-items">
             <div class="row center-block">
-                <div class="col-sm-6">
+                <div class="col-md-7">
                     <div class="feature-item">
-                        <img src="../img/ico-location.png" class="location-icon"/>
-                        <div>
+                        <div class="row">
+                        <div class="col-md-1">
+                            <img src="../img/ico-location.png" class="location-icon"/>
+                        </div>
+                        <div class="col-md-10" style="padding-left: 0px">
                             <p>125 Olympic-ro 35-gil <br/> Songpa-gu, Seoul 05510, Korea</p>
+                        </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-5">
                     <a href="mailto:act.angeltalk@gmail.com">
-                        <div class="feature-item float-right">
-                            <div>
-                                <p>act.angeltalk@gmail.com</p>
+                        <div class="feature-item">
+                            <div class="row">
+                                <div class="col-sm-1 col-md-1">
+                                    <img src="../img/ico-email.png" class="email-icon"/>
+                                </div>
+                                <div class="col-sm-8 col-md-10" style="padding-left: 0px">
+                                    <p>&nbspact.angeltalk@gmail.com</p>
+                                </div>
                             </div>
-                            <img src="../img/ico-email.png" class="email-icon"/>
                         </div>
                     </a>
                 </div>
@@ -152,10 +163,10 @@
     </div>
     <div class="container footer-bottom">
         <div class="row center-block">
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <p>ANGELTALK DEVS</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-12 col-md-6">
                 <ul class="list">
                     <li>Copyrights © 2017 All Rights Reserved</li>
                     <li><a href="https://docs.google.com/document/d/1ntRaoVOOvFlEIRH3bLiqe--jcJ2CJEwKbP0-pPQZAZs/edit?usp=sharing" target="_blank">Privacy Policy</a></li>

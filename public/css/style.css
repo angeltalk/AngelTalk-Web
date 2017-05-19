@@ -83,7 +83,7 @@ header .header-content {
     text-align: center;
     margin-top: 60px;
     position: relative;
-    min-width: 500px;
+    min-width: 300px;
 }
 
 header .header-content .header-content-inner {
@@ -228,14 +228,13 @@ section.features {
 }
 
 section.features div.feature-item {
-    width: 400px;
-    height: 328px;
+    max-width: 400px;
+    min-height: 328px;
     border-radius: 10px;
     border: solid 1px #d5d5d5;
 }
 
 section.features div.feature-items {
-    width: 844px;
     margin: 0 auto 82px auto;
 }
 
@@ -249,8 +248,8 @@ section.features div.features-title > h1 {
 }
 
 section.features div.row {
-    width: 844px;
-    margin: 20px 0;
+    max-width: 844px;
+    margin-bottom: 30px;
 }
 
 section.features div.feature-item:hover {
@@ -290,6 +289,10 @@ section.video iframe{
     top:0;
     bottom:0;
     left: 0;
+}
+
+section.video div.row {
+    max-width: 800px;
 }
 
 section.tab-section div.tutorials{
@@ -356,7 +359,7 @@ section.video div.video {
 }
 
 section.tab-section div.tab-pane p {
-    width: 800px;
+    max-width: 800px;
     height: 22px;
     font-size: 16px;
     font-weight: bold;
@@ -366,7 +369,7 @@ section.tab-section div.tab-pane p {
 }
 
 section.tab-section div.tab-pane pre {
-    width: 800px;
+    max-width: 800px;
     font-size: 14px;
     font-weight: normal;
     line-height: 1.71;
@@ -434,7 +437,7 @@ section.momsdiary p {
 
 section.momsdiary div.row {
     max-width: 740px;
-    min-width: 390px;
+    min-width: 305px;
 }
 
 section.momsdiary img.line {
@@ -556,28 +559,19 @@ footer img.location-icon {
     width: 11px;
     height: 11px;
     object-fit: contain;
-    float: left;
 }
 
 footer img.email-icon {
     width: 19px;
     height: 12px;
     object-fit: contain;
-    float: right;
 }
 
 footer img.feedback-button {
     width: 180px;
     height: 38px;
     margin-top: 54px;
-}
-
-footer div.float-left > div {
-    float: left;
-}
-
-footer div.float-right > div {
-    float: right;
+    margin-bottom: 54px;
 }
 
 footer div.footer-bottom {
@@ -620,3 +614,88 @@ footer div.footer-bottom ul a {
 
 
 
+@media (max-width: 767px) {
+
+    section.features div.row > div:first-child {
+        margin-bottom: 30px;
+    }
+
+    /*[class*="col-"] {*/
+        /*width: 100%;*/
+    /*}*/
+
+    .no-side-margin {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    footer div.footer-bottom {
+        height: 130px;
+    }
+
+    footer div.footer-bottom ul {
+        margin-right: 0;
+        min-width: 300px;
+    }
+
+    section.video iframe{
+        width: 320px;
+        height: 300px;
+        top:0;
+        bottom:0;
+        left: 0;
+    }
+
+    section.tab-section div.tutorials div.video,
+    section.video div.video {
+        width: 320px;
+        height: 300px;
+        background-color: #d7d7d7;
+    }
+
+    #header_body > button > img {
+        margin-top: 50px;
+    }
+
+    #navbar {
+        height: 300px;
+    }
+
+    nav #navbar > ul {
+        margin-right: 0px;
+        background-color: rgba(0, 0, 0, 0.9);;
+        margin-top: 0px;
+        width: 100%;
+    }
+
+    .navbar-toggle .icon-bar {
+        background-color: white;
+    }
+
+    .navbar-toggle {
+        margin-top: 29px;
+        margin-right: 5px;
+    }
+
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-fixed-top-inactive #navbar ul {
+        margin-top: 16px;
+    }
+
+    img.angeltalk-logo {
+        max-width: 260px;
+    }
+
+    #language_dropdown_menu.open {
+        display: block;
+    }
+
+    section.momsdiary div.diary {
+        padding: 28px;
+    }
+
+}

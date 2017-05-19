@@ -5,7 +5,7 @@
         $('#make_a_card').click(function(){
             $('#menu_how_to_use').click();
             setTimeout( function(){
-                window.scrollTo(0, 578);
+                window.scrollTo(0, $("#tab-section").offset().top - 87);
                 $('.nav-tabs a[href="#make-a-card"]').tab('show');
             },10 );
         });
@@ -13,7 +13,7 @@
         $('#using_lockscreen').click(function(){
             $('#menu_how_to_use').click();
             setTimeout( function(){
-                window.scrollTo(0, 578);
+                window.scrollTo(0, $("#tab-section").offset().top - 87);
                 $('.nav-tabs a[href="#using-lockscreen"]').tab('show');
             },10 );
         });
@@ -21,7 +21,7 @@
         $('#manage_cards').click(function(){
             $('#menu_how_to_use').click();
             setTimeout( function(){
-                window.scrollTo(0, 578);
+                window.scrollTo(0, $("#tab-section").offset().top - 87);
                 $('.nav-tabs a[href="#manage-cards"]').tab('show');
             },10 );
         });
@@ -30,7 +30,7 @@
         $('#share_cards').click(function(){
             $('#menu_how_to_use').click();
             setTimeout( function(){
-                window.scrollTo(0, 578);
+                window.scrollTo(0, $("#tab-section").offset().top - 87);
                 $('.nav-tabs a[href="#share-cards"]').tab('show');
             },10 );
         });
@@ -64,11 +64,11 @@
         <div class="features-title">
             <h1>KEY FEATURES</h1>
         </div>
-        <div class="feature-items">
+        <div class="feature-items center-block">
             <div class="row center-block">
-                <div class="col-sm-6" id="make_a_card">
+                <div class="col-sm-12 col-md-6" id="make_a_card">
                     <a href="#">
-                        <div class="feature-item">
+                        <div class="feature-item center-block">
                             <img src="../img/ico-media.png"/>
                             <h3>CARDS WITH REAL IMAGE & VOICE</h3>
                             <p class="text-muted">Use real pictures or short video clips of the things<br/>
@@ -76,9 +76,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6" id="using_lockscreen">
+                <div class="col-sm-12 col-md-6" id="using_lockscreen">
                     <a href="#">
-                        <div class="feature-item">
+                        <div class="feature-item center-block">
                             <img src="../img/ico-locked.png"/>
                             <h3>CARDS ON LOCK SCREEN</h3>
                             <p class="text-muted">Worrying about abuse of smartphone by your child? <br/>Using the lock
@@ -88,9 +88,9 @@
                 </div>
             </div>
             <div class="row center-block">
-                <div class="col-sm-6" id="manage_cards">
+                <div class="col-sm-12 col-md-6" id="manage_cards">
                     <a href="#">
-                        <div class="feature-item">
+                        <div class="feature-item center-block">
                             <img src="../img/ico-cards.png"/>
                             <h3>MANAGE CARDS EASILY</h3>
                             <p class="text-muted">Wanna hide some cards that are not appropriate  <br/>at this moment, or
@@ -98,9 +98,9 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-6" id="share_cards">
+                <div class="col-sm-12 col-md-6" id="share_cards">
                     <a href="#">
-                        <div class="feature-item">
+                        <div class="feature-item center-block">
                             <img src="../img/ico-share.png"/>
                             <h3>SHARE CARDS INSTANTLY</h3>
                             <p class="text-muted">Share cards to family members, school teachers, and <br/>language
@@ -114,7 +114,9 @@
 </section>
 
 <section class="video">
-    <div class="container video embed-responsive">
-        <iframe src="https://www.youtube.com/embed/ZjRpfmXDm1k" frameborder="0" allowfullscreen></iframe>
+    <div class="row no-side-margin center-block">
+        <div class="container video embed-responsive col-sm-12">
+            <iframe src="https://www.youtube.com/embed/ZjRpfmXDm1k" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </section>
