@@ -653,6 +653,7 @@ footer div.footer-bottom ul {
 footer div.footer-bottom ul > li:nth-child(2) {
     margin-top: 7px;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 footer div.footer-bottom ul a {
