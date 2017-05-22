@@ -517,6 +517,53 @@ section.momsdiary div.diary pre span {
     font-weight: bold;
 }
 
+section#privacy_policy {
+    font-family: OpenSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 24px;
+    letter-spacing: normal;
+    text-align: left;
+    white-space: pre-line;
+    max-width: 800px;
+}
+
+section#privacy_policy h1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+section#privacy_policy h2 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+}
+
+section#privacy_policy h3 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #7f7f7f;
+}
+
+section#privacy_policy p {
+    font-size: 14px;
+    color: #7f7f7f;
+}
+
+section#privacy_policy ul {
+    padding: 0;
+}
+
+section#privacy_policy li {
+    font-size: 14px;
+    color: #7f7f7f;
+    list-style: none;
+    margin-bottom: -24px;
+}
+
 footer {
     background-color: #f9f9f9;
 }
@@ -693,6 +740,7 @@ footer div.footer-bottom ul a {
 
     #language_dropdown_menu.open {
         display: block;
+        visibility: hidden;
     }
 
     section.momsdiary div.diary {
@@ -705,11 +753,17 @@ footer div.footer-bottom ul a {
     }
 
     ul.nav.nav-tabs {
-      width: 760px;
+      width: 360px;
     }
 
     ul.nav.nav-tabs > li {
-        width: 190px
+        width: 25%
+    }
+
+    ul.nav.nav-tabs > li.second {
+        width: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     section.tab-section li > a, section.tab-section li.active > a {
@@ -726,6 +780,10 @@ footer div.footer-bottom ul a {
         padding-top: 6px;
         padding-left: 30px;
         font-weight: normal!important;
+    }
+
+    section.tab-section div.tutorials{
+        margin-top: 50px;
     }
 }
 
