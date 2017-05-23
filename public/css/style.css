@@ -451,31 +451,38 @@ section.momsdiary div.diary{
     border-radius: 10px;
     background-color: #ffffff;
     border: solid 1px #d5d5d5;
-    padding: 40px;
+    padding-top: 32px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 section.momsdiary div.diary:nth-child(1) {
     height: 217.9px;
+    padding-bottom: 16px;
     margin-bottom: 54px;
 }
 
 section.momsdiary div.diary:nth-child(2) {
     height: 193.9px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
 }
 
 section.momsdiary div.diary:nth-child(3) {
     height: 313.8px;
+    padding-bottom: 40px;
     margin-bottom: 40px;
 }
 
 section.momsdiary div.diary:nth-child(4) {
     height: 385.8px;
+    padding-bottom: 16px;
     margin-bottom: 44px;
 }
 
 section.momsdiary div.diary:nth-child(5) {
     height: 385.8px;
+    padding-bottom: 16px;
     margin-bottom: 54px;
 }
 
@@ -491,25 +498,23 @@ section.momsdiary div.diary pre {
 }
 
 section.momsdiary div.diary:nth-child(1) pre {
-    height: 142px;
+    height: 168px;
 }
 
 section.momsdiary div.diary:nth-child(2) pre {
-    height: 120px;
+    height: 122px;
 }
 
 section.momsdiary div.diary:nth-child(3) pre {
-    height: 233.8px;
+    height: 242px;
 }
 
 section.momsdiary div.diary:nth-child(4) pre {
-    height: 305.8px;
-    line-height:normal;
+    height: 338px;
 }
 
 section.momsdiary div.diary:nth-child(5) pre {
-    height: 305.8px;
-    line-height: 1.6;
+    height: 338px;
 }
 
 section.momsdiary div.diary pre span {
@@ -743,10 +748,6 @@ footer div.footer-bottom ul a {
     #language_dropdown_menu.open {
         display: block;
         visibility: hidden;
-    }
-
-    section.momsdiary div.diary {
-        padding: 28px;
     }
 
     .nav-tabs-area {
