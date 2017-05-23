@@ -38,9 +38,13 @@
     <script>
 
         function openPrivacyPolicyPopup(){
-
             window.open('popup/privacy_policy.html' ,'','width=900,height=1000');
         }
+
+        function openMeetOurTeamPopup(){
+            window.open('popup/meet_our_team.html' ,'','width=900,height=1000');
+        }
+
         $(document).ready(function(){
 
             $("#header_body").load("header/home.html");
@@ -169,7 +173,7 @@
     <div class="container footer-bottom">
         <div class="row center-block">
             <div class="col-sm-12 col-md-6">
-                <p>ANGELTALK DEVS</p>
+                <p onclick="openMeetOurTeamPopup();">ANGELTALK DEVS</p>
             </div>
             <div class="col-sm-12 col-md-6">
                 <ul class="list">

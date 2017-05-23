@@ -640,6 +640,7 @@ footer div.footer-bottom .row {
 footer div.footer-bottom .row p {
     margin-top: 6px;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 footer div.footer-bottom ul {
