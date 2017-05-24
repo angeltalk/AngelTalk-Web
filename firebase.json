@@ -3,45 +3,6 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "public",
-    "rewrites": [
-      {
-        "source": "/en/*",
-        "destination": "/en/*"
-      },
-        {
-        "source" : "/en/popup/privacy_policy",
-        "destination" : "/en/popup/privacy_policy.html"
-        },
-        {
-        "source" : "/kr/popup/privacy_policy",
-        "destination" : "/kr/popup/privacy_policy.html"
-        },
-        {
-        "source" : "/en/popup/terms_of_service",
-        "destination" : "/en/popup/terms_of_service.html"
-        },
-        {
-        "source" : "/kr/popup/terms_of_service",
-        "destination" : "/kr/popup/terms_of_service.html"
-        },
-        {
-        "source" : "/en/popup/open_source",
-        "destination" : "/en/popup/open_source.html"
-        },
-        {
-        "source" : "/kr/popup/open_source",
-        "destination" : "/kr/popup/open_source.html"
-        },
-        {
-        "source": "/kr/*",
-        "destination": "/kr/*"
-      },
-        {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
+    "public": "public"
   }
 }
-
