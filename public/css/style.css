@@ -12,6 +12,8 @@ header {
     overflow-y: auto;
     background: -webkit-linear-gradient(124deg, #e35f38, #b83bc0);
     background: linear-gradient(124deg, #e35f38, #b83bc0);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#e35f38', endColorstr='#b83bc0');
+    height: 1%;
     color: white;
 }
 
