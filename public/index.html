@@ -5,7 +5,7 @@
         
    $(document).ready(function(){
        var browserLocale = getLang();
-       if(browserLocale.toLowerCase().includes("ko") || browserLocale.toLowerCase().includes("kr")) {
+       if((browserLocale.toLowerCase().indexOf("ko") > -1) || (browserLocale.toLowerCase().indexOf("kr") > -1)) {
            location.replace("/kr/index.html");
        }else{
            location.replace("/en/index.html");
@@ -15,8 +15,12 @@
          if (navigator.languages != undefined){ 
          return navigator.languages[0]; 
 	}else{ 
-         return navigator.language;
-	}
+        if(navigator.language == undefined){
+         return navigator.browserLanguage;
+        }else{
+            return navigator.language;
+        }
+    }
     }
     </script>
 </html>
