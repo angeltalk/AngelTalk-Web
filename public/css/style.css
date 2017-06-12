@@ -95,6 +95,7 @@ header .header-content .header-content-inner {
     margin: 0 auto;
     font-weight: 100;
     text-align: left;
+    max-width:355px;
 }
 
 header .header-content .header-content-inner h1 {
@@ -592,6 +593,10 @@ footer div.footer-title > p {
     text-align: center;
 }
 
+footer div.footer-title col-md-10 {
+    margin-left: 0px;
+}
+
 footer div.feature-items {
     margin-top: 54px;
 }
@@ -668,8 +673,6 @@ footer div.footer-bottom ul a {
     color: #a9a9a9;
     text-decoration: none;
 }
-
-
 
 @media (max-width: 767px) {
 
