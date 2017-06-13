@@ -1,5 +1,13 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 import App from './../App.js'
+import HeaderHome from './../header/HeaderHome.js'
+import HeaderHowToUse from './../header/HeaderHowToUse.js'
+import HeaderUseCase from "./../header/HeaderUseCase"
+import ContentBodyHome from './../body/ContentBodyHome.js'
+import ContentHowToUse from './../body/ContentHowToUse.js'
+import ContentUseCase from "./../body/ContentUseCase"
+import Footer from './../footer/Footer.js'
 
 class NavigationBar extends Component {
 
@@ -8,9 +16,9 @@ class NavigationBar extends Component {
             this.inActiveAllMenu()
             this.menuHome.classList.add('active')
 
-            this.menuHome.addEventListener('click', App.loadHome())
-            this.menuHowToUse.addEventListener('click', App.loadHowToUse())
-            this.menuUseCase.addEventListener('click', App.loadUseCase())
+            this.menuHome.addEventListener('click', this.loadHome())
+            this.menuHowToUse.addEventListener('click', this.loadHowToUse())
+            this.menuUseCase.addEventListener('click', this.loadUseCase())
         })
     }
 
@@ -19,6 +27,63 @@ class NavigationBar extends Component {
         Array.prototype.forEach((elem)=>{
             elem.classList.remove('active')
         })
+    }
+
+    loadHome = () => {
+        console.log("loadHome")
+        document.body.innerHTML = "<div id='root'></div>"
+        let result = ReactDOM.render(
+            <div>
+                <header id="header-main">
+                    <div className="container">
+                        <NavigationBar/>
+                        <HeaderHome/>
+                    </div>
+                </header>
+                <ContentBodyHome/>
+                <Footer/>
+            </div>,
+            document.getElementById('root')
+        )
+        return result
+    }
+
+    loadHowToUse = () => {
+        console.log("loadHowToUse")
+        document.body.innerHTML = "<div id='root'></div>"
+        let result = ReactDOM.render(
+            <div>
+                <header id="header-main">
+                    <div className="container">
+                        <NavigationBar/>
+                        <HeaderHowToUse/>
+                    </div>
+                </header>
+                <ContentHowToUse/>
+                <Footer/>
+            </div>,
+            document.getElementById('root')
+        )
+        return result
+    }
+
+    loadUseCase = () => {
+        console.log("loadUseCase")
+        document.body.innerHTML = "<div id='root'></div>"
+        let result = ReactDOM.render(
+            <div>
+                <header id="header-main">
+                    <div className="container">
+                        <NavigationBar/>
+                        <HeaderUseCase/>
+                    </div>
+                </header>
+                <ContentUseCase/>
+                <Footer/>
+            </div>,
+            document.getElementById('root')
+        )
+        return result
     }
 
     render() {

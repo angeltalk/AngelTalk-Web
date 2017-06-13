@@ -1,15 +1,22 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
 import AppInEnglish from './components/en/App.js'
 import AppInKorean from './components/kr/App.js'
-
 
 window.addEventListener('load', () => {
 
     var browserLocale = getLang()
 
     if((browserLocale.toLowerCase().indexOf("ko") > -1) || (browserLocale.toLowerCase().indexOf("kr") > -1)) {
-        AppInKorean.loadHome()
+        ReactDOM.render(
+            <AppInEnglish/>,
+            document.getElementById('root')
+        )
     }else{
-        AppInEnglish.loadHome()
+        ReactDOM.render(
+            <AppInEnglish/>,
+            document.getElementById('root')
+        )
     }
 
     function getLang(){
