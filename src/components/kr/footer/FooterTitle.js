@@ -4,7 +4,7 @@ class FooterTitle extends Component {
    render() {
        return(
            <div className="container footer-title">
-               <p>Any suggestions, questions, bug reports, and other inquiries are very welcome!</p>
+               <p>앱 개선 의견이나 문의 사항이 있으면 언제든지 저희에게 의견 보내주세요. 사용 중 불편하신 점, 앱 오류, 아이디어 어떤 것도 좋습니다.</p>
                <div className="feature-items">
                    <div className="row center-block">
                        <div className="col-md-7">
@@ -14,7 +14,7 @@ class FooterTitle extends Component {
                                        <img src="../img/ico-location.png" className="location-icon" alt=""/>
                                    </div>
                                    <div className="col-md-10">
-                                       <p>125 Olympic-ro 35-gil <br/> Songpa-gu, Seoul 05510, Korea</p>
+                                       <p>서울 송파구 올림픽로35길 125</p>
                                    </div>
                                </div>
                            </div>

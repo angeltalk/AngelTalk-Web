@@ -5,17 +5,17 @@ class ContentHowToUseManageCards extends Component {
         return (
             <div role="tabpanel" className="tab-pane" id="manage-cards">
                 <div className="video center-block embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/KvusKDHgGSc" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/KvusKDHgGSc" frameBorder="0" allowFullScreen></iframe>
                 </div>
                 <p className="center-block">Manage cards easily</p>
                 <pre className="main center-block">
                         <span>SHOW/HIDE</span>
-                        At a particular time, you may think that some cards are not appropriate to show them to your child.
+                        <br/>At a particular time, you may think that some cards are not appropriate to show them to your child.
                          Instead of deleting those cards permanently, you can just hide them so that your child are not able to see them in AngelTalk.<br /><br />
                         <span>CHANGE SORT ORDER</span>
-                        As your child grows, his or her interest changes. You can place the most attractive card in upper position and lower the position of less intersting cards. Your child doesn’t need to swipe too many cards to find a proper one.<br /><br />
+                        <br/>As your child grows, his or her interest changes. You can place the most attractive card in upper position and lower the position of less intersting cards. Your child doesn’t need to swipe too many cards to find a proper one.<br /><br />
                         <span>CHANGE CARD NAME, VOICE, etc.</span>
-                        It’s easy and simple. It takes only a few second to change those.
+                        <br/>It’s easy and simple. It takes only a few second to change those.
                     </pre>
                 <pre className="under center-block"></pre>
             </div>

@@ -63,17 +63,17 @@ class ContentHowToUse extends Component {
                             <div className="nav-tabs-area">
                                 <ul className="nav nav-tabs" role="tablist">
                                     <li role="presentation" className="active">
-                                        <a id='makeACard' ref={(elem) => this.makeACard = elem} href="#make-a-card" aria-controls="make-a-card" role="tab" data-toggle="tab">MAKE A CARD</a>
+                                        <a id='makeACard' ref={(elem) => this.makeACard = elem} href="#make-a-card" aria-controls="make-a-card" role="tab" data-toggle="tab">새 카드<br/> 만들기</a>
                                     </li>
                                     <li role="presentation" >
-                                        <a id='usingLockscreen' ref={(elem) => this.usingLockscreen = elem} href="#using-lockscreen" aria-controls="using-lockscreen" role="tab" data-toggle="tab">LOCK SCREEN</a>
+                                        <a id='usingLockscreen' ref={(elem) => this.usingLockscreen = elem} href="#using-lockscreen" aria-controls="using-lockscreen" role="tab" data-toggle="tab">잠금화면<br/> 설정</a>
                                     </li>
                                     <li role="presentation">
                                         <a id='manageCards' ref={(elem) => this.manageCards = elem} href="#manage-cards" aria-controls="manage-cards" role="tab"
-                                           data-toggle="tab">MANAGE CARDS</a>
+                                           data-toggle="tab">카  드<br/>관  리</a>
                                     </li>
                                     <li role="presentation">
-                                        <a id='shareCards' ref={(elem) => this.shareCards = elem} href="#share-cards" aria-controls="share-cards" role="tab" data-toggle="tab">SHARE CARDS</a>
+                                        <a id='shareCards' ref={(elem) => this.shareCards = elem} href="#share-cards" aria-controls="share-cards" role="tab" data-toggle="tab">카  드<br/>공  유<br/></a>
                                     </li>
                                 </ul>
                             </div>

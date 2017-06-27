@@ -5,11 +5,11 @@ import AppInKorean from './components/kr/App.js'
 
 window.addEventListener('load', () => {
 
-    var browserLocale = getLang()
+    let browserLocale = getLang()
 
     if((browserLocale.toLowerCase().indexOf("ko") > -1) || (browserLocale.toLowerCase().indexOf("kr") > -1)) {
         ReactDOM.render(
-            <AppInEnglish/>,
+            <AppInKorean/>,
             document.getElementById('root')
         )
     }else{
@@ -22,8 +22,8 @@ window.addEventListener('load', () => {
     function getLang(){
         if (window.navigator.languages !== undefined) {
             return window.navigator.languages[0]
-        }else{
-            if(window.navigator.language === undefined) {
+        } else {
+            if (window.navigator.language === undefined) {
                 return window.navigator.browserLanguage
             } else {
                 return window.navigator.language
@@ -31,3 +31,21 @@ window.addEventListener('load', () => {
         }
     }
 })
+
+window.addEventListener('scroll', windowScrollEvent)
+
+function windowScrollEvent() {
+    let topOffset = window.scrollY
+    let headerMain = document.getElementById('header-main')
+    let navTop = document.getElementById('nav_top')
+
+    if(topOffset > document.getElementById('contents_body').offsetTop - 88){
+        headerMain.style.marginTop = "88px"
+        navTop.classList.add("navbar-fixed-top")
+        navTop.classList.add("navbar-fixed-top-inactive")
+    } else {
+        headerMain.style.marginTop = "0px"
+        navTop.classList.remove("navbar-fixed-top-inactive")
+        navTop.classList.remove("navbar-fixed-top")
+    }
+}

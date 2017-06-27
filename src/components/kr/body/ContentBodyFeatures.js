@@ -68,9 +68,9 @@ class ContentBodyFeatures extends Component {
                                 <a href="#">
                                     <div className="feature-item center-block">
                                         <img src="../img/ico-media.png" alt=""/>
-                                        <h3>CARDS WITH REAL IMAGE & VOICE</h3>
-                                        <p className="text-muted">Use real pictures or short video clips of the things<br/>
-                                            that your child want to express. <br/>Record your voice to gain your child’s attention.</p>
+                                        <h3>카드 구성은 실제 사진과 음성으로</h3>
+                                        <p className="text-muted">글자나 기호 어려운 아이들에게<br/>실물 사진이나 영상을 보여주세요.<br/>
+                                            실제 음성을 직접 녹음하시면<br/>아이들이 더 잘 반응해요.</p>
                                     </div>
                                 </a>
                             </div>
@@ -78,9 +78,10 @@ class ContentBodyFeatures extends Component {
                                 <a href="#">
                                     <div className="feature-item center-block">
                                         <img src="../img/ico-locked.png" alt=""/>
-                                        <h3>CARDS ON LOCK SCREEN</h3>
-                                        <p className="text-muted">Worrying about abuse of smartphone by your child?<br/>Using the lock
-                                            screen of your smartphone,<br/>You can hand it to your child, anytime you want.</p>
+                                        <h3>모든 카드는 스마트폰 잠금화면에</h3>
+                                        <p className="text-muted">스마트폰으로 게임이나 유투브만 할까봐<br/>
+                                            걱정되시죠?<br/>엔젤톡은 스마트폰의 잠금화면에 나타납니다.<br/>
+                                            엉뚱한 사람에게 전화 걸거나,<br/>앱을 지우는 것을 막을 수 있어요.</p>
                                     </div>
                                 </a>
                             </div>
@@ -90,9 +91,9 @@ class ContentBodyFeatures extends Component {
                                 <a href="#">
                                     <div className="feature-item center-block">
                                         <img src="../img/ico-cards.png" alt=""/>
-                                        <h3>MANAGE CARDS EASILY</h3>
-                                        <p className="text-muted">Wanna hide some cards that are not appropriate<br/>at this moment, or
-                                            change some cards?<br/>It takes only a few seconds to do all things above.</p>
+                                        <h3>카드 관리는 쉽고 빠르게</h3>
+                                        <p className="text-muted">아이들이 커감에 따라 의사소통 카드를<br/>
+                                            계속 변경해 주어야 합니다.<br/>엔젤톡을 이용하면 카드 관리를<br/>쉽게 할 수 있어요.</p>
                                     </div>
                                 </a>
                             </div>
@@ -100,9 +101,9 @@ class ContentBodyFeatures extends Component {
                                 <a href="#">
                                     <div className="feature-item center-block">
                                         <img src="../img/ico-share.png" alt=""/>
-                                        <h3>SHARE CARDS INSTANTLY</h3>
-                                        <p className="text-muted">Share cards to family members, school teachers,<br/>and language
-                                            pathologists.<br/>You can share instantly via text messages or KakaoTalk.</p>
+                                        <h3>다른 사람들과 공유는 편리하게</h3>
+                                        <p className="text-muted">가족, 친구들, 학교 선생님 또는 언어 치료사분들과<br/>
+                                            카드를 공유해 보세요.<br/>카카오톡만 있으면 쉽게 카드를<br/>원하는 사람과 공유할 수 있어요.</p>
                                     </div>
                                 </a>
                             </div>

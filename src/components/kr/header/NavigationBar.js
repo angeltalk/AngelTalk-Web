@@ -140,17 +140,17 @@ class NavigationBar extends Component {
                     <div id="navbar" className="navbar-collapse collapse">
                         <ul className="nav navbar-nav" id="ul_nav">
                             <li>
-                                <a className="active nav_menu" id="menu_home" ref={(elem)=>this.menuHome=elem} href="#">HOME<br/><span className="second-line">Welcome</span></a>
+                                <a className="active nav_menu" id="menu_home" ref={(elem)=>this.menuHome=elem} href="#">홈<br/><span className="second-line">Welcome</span></a>
                             </li>
                             <li>
-                                <a id="menu_how_to_use" className="nav_menu" ref={(elem)=>this.menuHowToUse=elem} href="#">HOW TO USE<br/><span className="second-line">Tutorials</span></a>
+                                <a id="menu_how_to_use" className="nav_menu" ref={(elem)=>this.menuHowToUse=elem} href="#">사용 방법<br/><span className="second-line">Tutorials</span></a>
                             </li>
                             <li>
-                                <a id="menu_use_case" className="nav_menu" ref={(elem)=>this.menuUseCase=elem} href="#">HOW OTHERS USE<br/><span className="second-line">Use Cases</span></a>
+                                <a id="menu_use_case" className="nav_menu" ref={(elem)=>this.menuUseCase=elem} href="#">활용 사례<br/><span className="second-line">Use Cases</span></a>
                             </li>
                             <li className="dropdown">
                                 <a id="language_dropdown" href="#" className="dropdown-toggle nav_menu" data-toggle="dropdown" role="button" aria-haspopup="true"
-                                   aria-expanded="false">LANGUAGES<span className="caret"></span><br/><span
+                                   aria-expanded="false">언어(Languages)<span className="caret"></span><br/><span
                                     className="second-line">English </span></a>
                                 <ul id="language_dropdown_menu" ref={(elem)=>this.languageDropdownMenu=elem} className="dropdown-menu">
                                     <li ref={(elem)=>this.languageEnglishItem=elem}>ENGLISH</li>

@@ -55,31 +55,28 @@ nav #navbar ul li a:hover {
     color: rgba(255,255,255,1)
 }
 
-
 nav #navbar ul li a.active {
     color: rgba(255,255,255,1)
 }
-
 
 nav #navbar ul li a .second-line{
     font-size: 12px;
     font-weight: normal;
 }
 
-nav #ul_nav > li.dropdown.open > a {
-    padding-bottom: 5px;
-}
-
-nav #ul_nav > li.dropdown.open > ul {
-    margin-left: 18px;
-}
-
-nav #ul_nav > li.dropdown.open > ul a {
+nav #ul_nav > li.dropdown.open > ul li {
     font-size: 11px;
     font-weight: normal;
     line-height: 2.0;
     letter-spacing: normal;
     text-align: left;
+    margin-left: 18px;
+    padding-bottom: 5px;
+    color: rgba(255,255,255,0.5)
+}
+
+nav #ul_nav > li.dropdown.open > ul li:hover {
+    color: rgba(255,255,255,1)
 }
 
 header .header-content {
@@ -216,7 +213,7 @@ section a {
 }
 
 section.banners div.row {
-    margin-top: 20px;
+    padding-top: 20px;
     max-width: 1000px;
 }
 
@@ -784,10 +781,18 @@ footer div.footer-bottom ul a {
         display: block!important;
     }
 
-    li.mobile-language-list > a {
-        padding-top: 6px;
+    li.mobile-language-list {
+        padding-bottom: 5px;
         padding-left: 30px;
         font-weight: normal!important;
+        color: rgba(255,255,255,0.5)
+    }
+
+    li.mobile-language-list:hover {
+        padding-bottom: 5px;
+        padding-left: 30px;
+        font-weight: normal!important;
+        color: rgba(255,255,255,1)
     }
 
     section.tab-section div.tutorials{
